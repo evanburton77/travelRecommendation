@@ -1,4 +1,5 @@
 const btnSearch = document.getElementById('btnSearch');
+const btnClear = document.getElementById('btnClear');
 
 function showDetails() {
     const input = document.getElementById('conditionInput').value.toLowerCase();
@@ -44,4 +45,10 @@ function showDetails() {
     
 }
 
+
+function clear(){
+    document.getElementById('conditionInput').value = ''
+    
+}
 btnSearch.addEventListener('click', showDetails);
+btnClear.addEventListener('click', clear);
